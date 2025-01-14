@@ -1,0 +1,18 @@
+Wprowadzenie
+L1  -> Wprowadzenie do Kathara
+
+RIP
+L2  -> Ruting statyczny vs. ruting dynamiczny RIP
+
+OSPF
+L3  -> OSPF - router wyróżniony ( designated router )
+L4  -> OSPF - pojedynczy obszar ( single area )
+L5  -> OSPF - wiele obszarów ( multi-area ) cz 1
+L6  -> OSPF - wiele obszarów ( multi area ) cz 2
+
+BGP
+L7  -> BGP - wprowadzenie ( simple peering & announcement )
+L8  -> BGP - wielodrogowość ( multihoming ) cz 1
+L9  -> BGP - wielodrogowość ( multi-homed stub ) cz2
+L10 -> BGP - inżynieria ruchu, Local Preference
+L11 -> BGP - inżynieria ruchu, Multi Exit Discriminator
