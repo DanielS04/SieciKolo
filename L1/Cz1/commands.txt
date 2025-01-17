@@ -1,0 +1,14 @@
+Stworzyc nowa maszyne: 
+host:~$ kathara vstart -n pc1 --eth 0:A
+
+Skonfigurowac adres ip dla eth0 pc1
+pc1:~$ ifconfig eth0 10.0.0.1 netmask 255.255.255.0 up
+
+Sprawdzic ustawienia interfejsu eth0
+pc1:~$ ifconfig eth0
+
+Sprawdzic tablice routingu pc1
+pc1:~$ route
+
+Wylaczyc maszyne razem z calym kontenerem
+host:~$ kathara vclean -n pc1

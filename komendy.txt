@@ -1,0 +1,29 @@
+Tworzenie nowej maszyny
+host:~$ kathara vstart -n pc1 --eth 0:A
+
+Wylaczyc maszyne razem z calym kontenerem
+host:~$ kathara vclean -n pc1
+
+Skonfigurowac pc1 eth0
+pc1:~$ ifconfig eth0 10.0.0.176 netmask 255.255.255.0 broadcast 10.0.0.255 up
+
+Sprawdzic ustawienia interfejsu pc1 eth0
+pc1:~$ ifconfig eth0
+
+Sprawdzic tablice routingu pc1
+pc1:~$ route
+
+Ping
+pc1:~$ ping -c 4 10.0.0.2
+
+Nasluchiwanie pakietow
+pc1:~$ tcpdump -tenni eth0 -w /hosthome/capture.pcap
+
+Dodanie trasy domyslnej dla pc1
+pc1:~$ route add default gw 195.11.14.1
+
+Dodanie trasy domyslnej dla r1
+r1:~$ route add -net 195.11.14.0/24 gw 100.0.0.8 dev eth0
+    czyli:
+        siec 195.11.14.0 z maska 24
+        jest dostepna przez 100.0.0.9 na interfejsie eth0 

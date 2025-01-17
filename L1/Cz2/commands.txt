@@ -1,0 +1,19 @@
+Stworzyc pc1
+host:~$ kathara vstart -n pc1 --eth 0:A 
+Stworzyc pc2
+host:~$ kathara vstart -n pc2 --eth 0:A 
+
+Konfiguracja interfejsow pc1 i pc2 
+pc1:~$ ifconfig eth0 10.0.0.176 netmask 255.255.255.0 broadcast 10.0.0.255 up
+pc2:~$ ifconfig eth0 10.0.0.2   netmask 255.255.255.0 broadcast 10.0.0.255 up
+
+pingowanie
+pc1:~$ ping -c 4 10.0.0.2
+pc2:~$ ping -c 4 10.0.0.176
+
+Nasluchiwanie pakietow
+pc2:~$ tcpdump -tenni eth0 -w /hosthome/capture.pcap
+
+Usuniecie maszyn
+host:~$ kathara vclean -n pc1
+host:~$ kathara vclean -n pc2
