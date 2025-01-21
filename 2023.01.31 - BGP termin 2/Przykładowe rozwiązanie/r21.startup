@@ -1,0 +1,6 @@
+/sbin/ifconfig eth0 7.7.7.1 netmask 255.255.255.0  up 
+/sbin/ifconfig eth1 8.159.0.1 netmask 255.255.255.0  up 
+/sbin/ifconfig lo 127.0.0.1  
+chmod a+rw /etc/quagga
+/etc/init.d/quagga start
+/etc/init.d/ospfd start

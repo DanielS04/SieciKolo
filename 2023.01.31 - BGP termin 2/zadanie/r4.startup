@@ -1,0 +1,8 @@
+/sbin/ifconfig eth0 4.4.4.1 netmask 255.255.255.0   up 
+/sbin/ifconfig eth1 2.2.2.2 netmask 255.255.255.0  up 
+/sbin/ifconfig lo 127.0.0.1  
+chmod a+rw /etc/quagga
+/etc/init.d/zebra start
+/etc/init.d/ospfd start
+
+/etc/init.d/quagga restart

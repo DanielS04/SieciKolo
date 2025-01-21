@@ -1,0 +1,99 @@
+{
+	// Place your lab2 workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"kathara1":{
+		"prefix": ["remote-as"],
+		"body": ["remote-as"],
+	},
+	"kathara2":{
+		"prefix": "prefix-list",
+		"body": "prefix-list",
+	},
+	"ka0":{
+		"prefix": ["neighbor"],
+		"body": ["neighbor"],
+	},
+	"ka1":{
+		"prefix": ["description"],
+		"body": ["description"],
+	},
+	"ka2":{
+		"prefix": ["network"],
+		"body": ["network"],
+	},
+	"ka3":{
+		"prefix": ["router bgp"],
+		"body": ["router bgp"],
+	},
+	"ka4":{
+		"prefix": ["router rip"],
+		"body": ["router rip\nversion 2"],
+	},
+	"ka5":{
+		"prefix": ["router ospf"],
+		"body": ["router ospf"],
+	},
+	"ka6":{
+		"prefix": ["hostname"],
+		"body": ["hostname"],
+	},
+	"daemons":{
+		"prefix": "daemons",
+		"body": ["# This file tells the zebra package","# which daemons to start.","# Entries are in the format: <daemon>=(yes|no|priority)",
+		"# where 'yes' is equivalent to infinitely low priority, and",
+		"# lower numbers mean higher priority. Read",
+		"# /usr/doc/zebra/README.Debian for details.",
+		"# Daemons are: bgpd zebra ospfd ospf6d ripd ripngd",
+		"zebra=yes",
+		"bgpd=yes",
+		"ospfd=yes",
+		"ospf6d=no",
+		"ripd=yes",
+		"ripngd=no",]
+	},
+	"ka7":{
+		"prefix": ["permit"],
+		"body": ["permit"],
+	},
+	"ka8":{
+		"prefix": ["ip prefix-list"],
+		"body": ["ip prefix-list"],
+	},
+	"allIP":{
+		"prefix": ["all"],
+		"body": ["0.0.0.0/0"],
+	},
+	"ka9":{
+		"prefix": ["next-hop-self"],
+		"body": ["next-hop-self"],
+	},
+	"ka10":{
+		"prefix": ["route-map"],
+		"body": ["route-map"],
+	},
+	"ka11":{
+		"prefix": ["local-preference"],
+		"body": ["local-preference"],
+	},
+
+	// "ka6":{
+	// 	"prefix": ["hostname"],
+	// 	"body": ["hostname"],
+	// },
+
+
+}
